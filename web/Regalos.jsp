@@ -48,7 +48,7 @@
                                 System.out.print("Conecto correctamente");
 
                                 try{
-                                    String url="jdbc:mysql://localhost:3306/yps2?user=root&password=n0m3l0";
+                                    String url="jdbc:mysql://localhost:3306/yps2?user=root&password=Sn0w.2017";
                                     con=DriverManager.getConnection(url);
                                     st=con.createStatement();
                                     rs=st.executeQuery("Select producto.id_producto, material.Material, producto.Ubimagen, producto.Precio from material INNER JOIN producto ON producto.id_material=material.id_material where id_categoria=4");
